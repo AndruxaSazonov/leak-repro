@@ -13,7 +13,7 @@ export default {
     for (let index = 0; index < 5000; ++index) {
      links.push({ name: index.toString() + " link", href: "/" + index.toString() })
     }
-    console.log(process.memoryUsage())
+    if (process.server) console.log(Math.floor(process.memoryUsage().rss / 1024 / 1024).toString() + ' Mb')
     return { links }
   }
 }

@@ -16,7 +16,7 @@ export default {
       }
       resolve(result)
     }).then(data => store.commit('SetEntries', data))
-    console.log(process.memoryUsage())
+    if (process.server) console.log(Math.floor(process.memoryUsage().rss / 1024 / 1024).toString() + ' Mb')
     return { items: store.state.Entries }
   }
 }
