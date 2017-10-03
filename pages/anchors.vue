@@ -10,7 +10,7 @@
 export default {
   data() {
     let anchors = []
-    for (let index = 0; index < 500; ++index) {
+    for (let index = 0; index < 5000; ++index) {
      anchors.push({ name: index.toString() + " link", href: "/" + index.toString() })
     }
     console.log(process.memoryUsage())
