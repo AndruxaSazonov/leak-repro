@@ -1,0 +1,14 @@
+{
+  "name": "leak-repro",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "node node_modules/nuxt/bin/nuxt build",
+    "start": "node node_modules/nuxt/bin/nuxt start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nuxt": "latest"
+  }
+}
